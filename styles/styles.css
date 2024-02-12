@@ -52,7 +52,7 @@ nav .loginlink {
 
 nav .mytopsearchbar {
   display: none;
-  border: 2px solid black;
+  border: 1px solid #65350f;
   border-radius: 25px;
   padding: 5px 15px;
   justify-content: space-between;
@@ -60,6 +60,10 @@ nav .mytopsearchbar {
   width: 50%;
   margin: 10px auto;
   background-color: whitesmoke;
+}
+
+nav .mytopsearchbar svg{
+  color: black;
 }
 nav .mytopsearchbar input {
   border: none;
@@ -326,6 +330,9 @@ footer .copyrighttxt {
   .categoriesCont .categoryContainers .categ img {
     width: 100%;
     height: 100px;
+  }
+  .productsCont .prod .prodbtns button {
+    font-size: .8em;
   }
   
   footer {
