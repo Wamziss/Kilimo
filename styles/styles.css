@@ -1,3 +1,6 @@
+*{
+  box-sizing: border-box;
+}
 body {
   margin: 0;
 }
@@ -195,9 +198,14 @@ main .mysearchbar input:focus {
   border-radius: 10px;
   margin-bottom: 30px;
 }
+.productsCont .prod:hover{
+  box-shadow: 5px 5px 20px;
+}
 .productsCont .prod img {
   width: 100%;
   height: auto;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 }
 .productsCont .prod .desc {
   margin: 10px;
@@ -222,6 +230,10 @@ main .mysearchbar input:focus {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+  
+}
+.productsCont .prod .prodbtns button:hover{
+  opacity: .8;
 }
 .productsCont .prod .prodbtns .contactbtn {
   background-color: #228c22;
@@ -327,9 +339,15 @@ footer .copyrighttxt {
     border-bottom-right-radius: 0px;
     font-size: 17px;
   }
+  .maintop .mysearchbar{
+    display: none;
+  }
   .categoriesCont .categoryContainers .categ img {
     width: 100%;
     height: 100px;
+  }
+  .filter{
+    width: 40vw;
   }
   .productsCont .prod .prodbtns button {
     font-size: .8em;
@@ -338,8 +356,52 @@ footer .copyrighttxt {
   footer {
     display: flex;
   }
-
   /* media queries end*/
 }
+/* 1200px */
+@media screen and (min-width: 1200px) {
+  
+  nav .rightnav {
+    width: 30%;
+  }
+  /* Main top */
+  .indexCont {
+    width: 80%;
+    height: 150px;
+    padding: 10px;
+    border-radius: 20px;
+    border-top-left-radius: 0;
+    border-bottom-right-radius: 0px;
+    font-size: 17px;
+  }
+  .indexCont #carouselExampleInterval {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    min-width: 100%;
+    max-width: 100%;
+  }
+
+  .categoriesCont .categoryContainers .categ img {
+    width: 100%;
+    height: 150px;
+  }
+  .filter{
+    width: 30vw;
+  }
+  .productsCont .prod .prodbtns button {
+    font-size: .9em;
+  }
+  .productsCont .prod {
+    width: 30%;
+    background-color: whitesmoke;
+    padding-bottom: 20px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+  }
+
+}
+
+  /* media queries end*/
 /* #228c22; */
 /* #65350f */
